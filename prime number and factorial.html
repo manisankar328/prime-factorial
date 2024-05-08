@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function isPrime(num){
+        if (num<=1){
+            return false;
+        }
+        for (let i =2; i<=Math.sqrt(num); i++){
+            if(num % 1===0){
+                return false;
+            }
+
+        }
+        return true;
+      }
+      let userinput = parseInt(prompt("Enter a number to find a prime number or not"));
+      if(isPrime (userinput)){
+        console.log(userinput + " is a prime a number");
+
+      }
+      else{
+        console.log(userinput +  " is not a prime number");
+      }
+      function factorial(num){
+            if (num===0 || num===1){
+                return 1;
+            }
+            else{
+                return num * factorial(num-1);
+            }
+        }
+        let num =parseInt (prompt("Enter a number to find factorial:"));
+        let result = factorial(num);
+        console.log("The factorial of " + num + "is:" + result);
+
+
+         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
